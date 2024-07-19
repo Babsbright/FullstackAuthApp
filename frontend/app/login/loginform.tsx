@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation'
 import Cookies from "universal-cookie";
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import Loader from "@/app/components/Loader";
 
 export default function LoginForm() {
@@ -155,12 +154,12 @@ export default function LoginForm() {
                             type="submit"
                             className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-medium leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                         >
-                            {loading ? <Loader /> : "  Sign in"}
+                            {loading ? <Loader /> : "Sign in"}
                         </button>
                     </div>
                 </form>
                 <p className="mt-10 text-center text-sm text-gray-500">
-                    Don't have an account?
+                    Don&apos;t have an account?
                     <a href="/register" className="font-medium leading-6 text-indigo-600 hover:text-indigo-500"> Register</a>
                 </p>
             </div>

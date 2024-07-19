@@ -1,16 +1,14 @@
 'use client'
 import { Suspense } from "react";
-import isAuth from "../utils/auth";
-import Cookies from "universal-cookie";
-import { useRouter } from "next/navigation";
+import IsAuth from "../utils/auth";
 import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ECommerce from "../components/E-commerce";
- 
+ import Loader from "../components/Loader";
 
 const Index = () => {
  
   return (
-<>
+<Suspense fallback={<Loader />}>
     <DefaultLayout>
       {/* <main className=" h-screen flex justify-center items-center">
         <p>Dashboard {localStorage.getItem('username')}</p>
@@ -19,9 +17,9 @@ const Index = () => {
       </main> */}
       <ECommerce />
       </DefaultLayout>
-    </>
+    </Suspense>
   );
 };
 
 
-export default isAuth(Index);
+export default IsAuth(Index);

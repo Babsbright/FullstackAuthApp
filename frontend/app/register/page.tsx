@@ -2,8 +2,8 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import Cookies from "universal-cookie";
-import 'react-toastify/dist/ReactToastify.css';
 import RegisterForm from "./register";
+import Image from "next/image";
 
 export default function Register() {
     const router = useRouter();
@@ -14,7 +14,7 @@ export default function Register() {
             router.push("/dashboard");
         }
 
-    }, []);
+    }, [token]);
 
     return (
         <>
@@ -36,12 +36,16 @@ export default function Register() {
                         <div className="flex flex-col items-center">
                             <div className="w-full flex-1">
 
-                                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                                    <img
-                                        alt="Logo"
-                                        src="/images/logo/logo.svg"
-                                        className="mx-auto h-20 w-auto"
-                                    />
+                            <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
+                                    <Image src={"/images/logo/logo.svg"}
+                                    width={20}
+                                    height={20}
+                                    style={{
+                                      width: "200px",
+                                      height: "auto",
+                                    }}
+                                    alt="logo"
+                                  />
                                     <h2 className="mt-10 text-center text-2xl font-medium leading-9 tracking-tight text-gray-900">
                                         Register your account
                                     </h2>

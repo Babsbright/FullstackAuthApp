@@ -2,24 +2,24 @@
 import { useEffect } from "react";
 import { useRouter } from 'next/navigation'
 import Cookies from "universal-cookie";
-import 'react-toastify/dist/ReactToastify.css';
 import LoginForm from "./loginform";
 import { Inter } from "next/font/google";
 import "../globals.css";
+import Image from "next/image";
 
-const inter = Inter({ subsets: ["latin",], display:'swap' });
+const inter = Inter({ subsets: ["latin",], display: 'swap' });
 
 export default function Login() {
     const router = useRouter();
     const cookies = new Cookies();
     const token = cookies.get("TOKEN");
-   
+
     useEffect(() => {
         if (token) {
             router.push("/dashboard");
         }
 
-    }, []);
+    }, [token]);
 
     return (
         <>
@@ -42,12 +42,17 @@ export default function Login() {
                         <div className="flex flex-col items-center">
                             <div className="w-full flex-1 mt-8">
 
-                                <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-                                    <img
-                                        alt="Logo"
-                                        src="/images/logo/logo.svg"
-                                        className="mx-auto h-20 w-auto"
+                                <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
+                                    <Image src={"/images/logo/logo.svg"}
+                                        width={20}
+                                        height={20}
+                                        style={{
+                                            width: "200px",
+                                            height: "auto",
+                                        }}
+                                        alt="logo"
                                     />
+
                                     <h2 className="mt-10 text-center text-2xl leading-9 tracking-tight text-gray-900">
                                         Sign in to your account
                                     </h2>

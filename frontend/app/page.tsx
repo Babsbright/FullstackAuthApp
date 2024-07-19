@@ -15,7 +15,7 @@ export default function Home() {
         router.push("/login");
       }
 
-  }, []);
+  }, [token]);
   return (
   <>
  

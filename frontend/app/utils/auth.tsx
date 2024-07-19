@@ -4,7 +4,7 @@ import Cookies from "universal-cookie";
 import { useRouter } from "next/navigation";
 
 
-export default function isAuth(Component: any) {
+export default function IsAuth(Component: any) {
 
   return (props: JSX.IntrinsicAttributes) => {
     const cookies = new Cookies();
