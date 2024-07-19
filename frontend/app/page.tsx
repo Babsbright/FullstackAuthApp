@@ -14,8 +14,8 @@ export default function Home() {
       }else{
         router.push("/login");
       }
-
-  }, [token]);
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
   <>
  

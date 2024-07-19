@@ -13,8 +13,8 @@ export default function Register() {
         if (token) {
             router.push("/dashboard");
         }
-
-    }, [token]);
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     return (
         <>

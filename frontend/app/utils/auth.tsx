@@ -1,12 +1,12 @@
 "use client";
-import { JSX, useEffect } from "react";
+import {useEffect } from "react";
 import Cookies from "universal-cookie";
 import { useRouter } from "next/navigation";
 
 
 export default function IsAuth(Component: any) {
 
-  return (props: JSX.IntrinsicAttributes) => {
+  return (props:any) => {
     const cookies = new Cookies();
     const router = useRouter()
     const token = cookies.get("TOKEN");
@@ -15,7 +15,8 @@ export default function IsAuth(Component: any) {
       if (!token) {
         router.push('/login');
       }
-    }, [token, router]);
+         // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     // If the user is authenticated, render the WrappedComponent
     // Otherwise, render null while the redirection is in progress
