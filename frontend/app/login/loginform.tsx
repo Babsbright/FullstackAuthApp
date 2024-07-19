@@ -35,7 +35,7 @@ export default function LoginForm() {
         };
         console.log(userData)
         axios
-            .post("http://127.0.0.1:5000/api/v1/login", userData)
+            .post("https://fullstack-auth-app-git-main-babsbrights-projects.vercel.app/api/v1/login", userData)
             .then((response) => {
                 console.log(response);
                 localStorage.setItem('username', response.data.user.name)

@@ -15,6 +15,10 @@ app.use('/api/v1', require('./routes/auth'))
 app.use('/api/v1', require('./routes/features'))
 
 
+// Allow specific origin(s)
+app.use(cors({
+  origin: 'https://fullstack-auth-app-git-main-babsbrights-projects.vercel.app'
+}));
 // Curb Cores Error by adding a header here
 app.use((req, res, next) => {
     res.setHeader("Access-Control-Allow-Origin", "*");
