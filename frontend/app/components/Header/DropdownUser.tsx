@@ -23,17 +23,17 @@ const DropdownUser = () => {
         className="flex items-center gap-4"
         href="#"
       >
-        <span className="hidden text-left lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
-            {localStorage.getItem("username")}          </span>
-          <span className="block text-xs">{localStorage.getItem("useremail")}</span>
+        <span className="hidden text-left capitalize font-medium lg:block">
+          <span className="block text-sm text-black">
+            {localStorage.getItem("username") ? localStorage.getItem("username") : ""} </span>
+          <span className="block text-xs">{localStorage.getItem("useremail") ? localStorage.getItem("useremail") : ""}</span>
         </span>
 
-        <span className="h-12 w-12 rounded-full">
+        <span className="h-12 w-12 rounded-full flex flex-col items-center justify-center">
           <Image
-            width={112}
-            height={112}
-            src={"/images/logo/logo.svg"}
+            width={30}
+            height={30}
+            src={"/images/user.svg"}
             style={{
               width: "auto",
               height: "auto",
@@ -92,6 +92,12 @@ const DropdownUser = () => {
             </li>
             
           </ul> */}
+           <span className=" text-left pl-8 my-4 font-medium capitalize lg:hidden">
+          <span className="block text-sm text-black">
+            {localStorage.getItem("username") ? localStorage.getItem("username") : ""} </span>
+          <span className="block text-xs">{localStorage.getItem("useremail") ? localStorage.getItem("useremail") : ""}</span>
+        </span>
+
           <button onClick={handleLogOut} className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base">
             <svg
               className="fill-current"
@@ -112,6 +118,8 @@ const DropdownUser = () => {
             </svg>
             Log Out
           </button>
+
+         
         </div>
       )}
       {/* <!-- Dropdown End --> */}

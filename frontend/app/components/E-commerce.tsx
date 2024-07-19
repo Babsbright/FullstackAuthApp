@@ -8,6 +8,7 @@ import TableOne from "./Tables/TableOne";
 import TableThree from "./Tables/TableThree";
 import TableTwo from "./Tables/TableTwo";
 import CardDataStats from "./CardDataStats";
+import TableFour from "./Tables/TableFour";
 
 // const MapOne = dynamic(() => import("./Maps/MapOne"), {
 //   ssr: false,
@@ -110,8 +111,6 @@ const ECommerce: React.FC = () => {
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
         <ChartOne />
         <ChartTwo />
-        <ChartThree />
-        {/* <MapOne /> */}
         <div className="col-span-12">
           <TableTwo />
         </div>

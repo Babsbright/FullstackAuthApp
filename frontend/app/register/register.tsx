@@ -33,11 +33,9 @@ export default function RegisterForm() {
             email: data.email,
             password: data.password
         };
-        console.log(userData)
         axios
-            .post("http://127.0.0.1:5000/api/v1/register", userData)
+            .post(`${process.env.NEXT_PUBLIC_BASE_URL}/register`, userData)
             .then((response) => {
-                console.log(response);
                 if (response.data.token) {
                     router.push('/login')
                 }
@@ -176,7 +174,7 @@ export default function RegisterForm() {
             </div>
 
 
-<ToastContainer />
+            <ToastContainer />
 
         </>
     );

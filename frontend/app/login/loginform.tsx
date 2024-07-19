@@ -25,6 +25,7 @@ export default function LoginForm() {
             [e.target.name]: value
         });
     };
+    const { BASE_URL } = process.env;
 
     const handleSubmit = (e: any) => {
         setLoading(true)
@@ -33,11 +34,9 @@ export default function LoginForm() {
             email: data.email,
             password: data.password
         };
-        console.log(userData)
-        axios
-            .post("https://fullstack-auth-app-git-main-babsbrights-projects.vercel.app/api/v1/login", userData)
+                axios
+            .post(`${process.env.NEXT_PUBLIC_BASE_URL}/login`, userData)
             .then((response) => {
-                console.log(response);
                 localStorage.setItem('username', response.data.user.name)
                 localStorage.setItem('useremail', response.data.user.email)
 
