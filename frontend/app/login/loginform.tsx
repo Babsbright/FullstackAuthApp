@@ -24,7 +24,6 @@ export default function LoginForm() {
             [e.target.name]: value
         });
     };
-    const { BASE_URL } = process.env;
 
     const handleSubmit = (e: any) => {
         setLoading(true)

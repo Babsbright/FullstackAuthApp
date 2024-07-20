@@ -51,6 +51,7 @@ export default function Login() {
                                             height: "auto",
                                         }}
                                         alt="logo"
+                                        priority
                                     />
 
                                     <h2 className="mt-10 text-center text-2xl leading-9 tracking-tight text-gray-900">

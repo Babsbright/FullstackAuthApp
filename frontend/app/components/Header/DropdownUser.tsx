@@ -31,14 +31,15 @@ const DropdownUser = () => {
 
         <span className="h-12 w-12 rounded-full flex flex-col items-center justify-center">
           <Image
-            width={30}
-            height={30}
+            width={20}
+            height={20}
             src={"/images/user.svg"}
             style={{
-              width: "auto",
-              height: "auto",
+              width: "40px",
+              height: "40px",
             }}
             alt="User"
+            priority
           />
         </span>
 
@@ -92,11 +93,11 @@ const DropdownUser = () => {
             </li>
             
           </ul> */}
-           <span className=" text-left pl-8 my-4 font-medium capitalize lg:hidden">
-          <span className="block text-sm text-black">
-            {localStorage.getItem("username") ? localStorage.getItem("username") : ""} </span>
-          <span className="block text-xs">{localStorage.getItem("useremail") ? localStorage.getItem("useremail") : ""}</span>
-        </span>
+          <span className=" text-left pl-8 my-4 font-medium capitalize lg:hidden">
+            <span className="block text-sm text-black">
+              {localStorage.getItem("username") ? localStorage.getItem("username") : ""} </span>
+            <span className="block text-xs">{localStorage.getItem("useremail") ? localStorage.getItem("useremail") : ""}</span>
+          </span>
 
           <button onClick={handleLogOut} className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base">
             <svg
@@ -119,7 +120,7 @@ const DropdownUser = () => {
             Log Out
           </button>
 
-         
+
         </div>
       )}
       {/* <!-- Dropdown End --> */}

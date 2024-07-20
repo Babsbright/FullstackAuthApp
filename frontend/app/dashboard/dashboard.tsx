@@ -1,9 +1,9 @@
 'use client'
-import IsAuth from "../utils/auth";
+import WithAuth from "../proctectedRoute";
 import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ECommerce from "../components/E-commerce";
 
-const Index = () => {
+const Dash = () => {
  
   return (
     <DefaultLayout>
@@ -13,4 +13,4 @@ const Index = () => {
 };
 
 
-export default IsAuth(Index);
+export default WithAuth(Dash);
