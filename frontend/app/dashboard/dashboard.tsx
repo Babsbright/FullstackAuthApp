@@ -1,7 +1,7 @@
 'use client'
-import WithAuth from "../ProctectedRoute";
 import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ECommerce from "../components/E-commerce";
+import ProctectedRoute from "../ProctectedRoute";
 
 const Dash = () => {
  
@@ -13,4 +13,4 @@ const Dash = () => {
 };
 
 
-export default WithAuth(Dash);
+export default ProctectedRoute(Dash);

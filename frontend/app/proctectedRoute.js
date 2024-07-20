@@ -2,7 +2,7 @@
 import Cookies from 'universal-cookie';
 import { redirect } from 'next/navigation';
 
-function WithAuth(WrappedComponent) {
+function ProctectedRoute(WrappedComponent) {
   return (props) => {
     const cookies = new Cookies();
     const token = cookies.get("TOKEN");
@@ -15,6 +15,6 @@ function WithAuth(WrappedComponent) {
   }
 };
 
-WithAuth.displayName = 'WithAuth';
+ProctectedRoute.displayName = 'ProctectedRoute';
 
-export default WithAuth;
+export default ProctectedRoute;
