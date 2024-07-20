@@ -1,7 +1,8 @@
 
 import Cookies from 'universal-cookie';
 import { redirect } from 'next/navigation';
-const WithAuth = (WrappedComponent) => {
+
+export default function WithAuth (WrappedComponent) {
   return (props) => {
     const cookies = new Cookies();
     const token = cookies.get("TOKEN");
@@ -14,4 +15,3 @@ const WithAuth = (WrappedComponent) => {
   }
 };
 
-export default WithAuth;
