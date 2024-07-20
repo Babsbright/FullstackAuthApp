@@ -13,6 +13,7 @@ const config: Config = {
       inter: ["Inter", "sans-serif"],
 
     },
+    darkMode:false,
     screens: {
       "2xsm": "375px",
       xsm: "425px",
