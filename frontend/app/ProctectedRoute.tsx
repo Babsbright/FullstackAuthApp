@@ -1,9 +1,10 @@
 
 import Cookies from 'universal-cookie';
 import { redirect } from 'next/navigation';
+import { JSX } from 'react';
 
-function ProctectedRoute(WrappedComponent) {
-  return (props) => {
+function ProctectedRoute(WrappedComponent:any) {
+  return (props:any) => {
     const cookies = new Cookies();
     const token = cookies.get("TOKEN");
 

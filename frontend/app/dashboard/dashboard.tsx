@@ -2,7 +2,6 @@
 import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ECommerce from "../components/E-commerce";
 import ProctectedRoute from "../ProctectedRoute";
-
 const Dash = () => {
  
   return (
