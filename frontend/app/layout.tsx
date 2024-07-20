@@ -6,9 +6,6 @@ const inter = Inter({ subsets: ["latin"], display: "swap", adjustFontFallback: f
   weight: ["100", "200", "400", "700"],
 
  });
-
-
-
 export const metadata: Metadata = {
   title: "Authentication",
   description: "Authorize to access an admin dashboard",
