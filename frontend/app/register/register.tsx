@@ -105,6 +105,8 @@ export default function RegisterForm() {
                                     value={data.password}
                                     onChange={handleChange}
                                     type={passwordShow ? "text" : "password"}
+                                    minLength={6}
+                                    maxLength={10}
                                     required
                                     className="block w-full rounded-md  py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
                                 />
