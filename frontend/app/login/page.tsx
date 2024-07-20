@@ -38,7 +38,7 @@ export default function Login() {
             <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
 
                 <div className="max-w-screen-xl m-0 shadow-lg sm:rounded-lg flex justify-center flex-1">
-                    <div className="flex flex-col justify-center lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
+                    <div className="flex flex-col sm:justify-center lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                         <div className="flex flex-col items-center justify-center">
                             <div className="w-full flex-1 mt-8">
 
