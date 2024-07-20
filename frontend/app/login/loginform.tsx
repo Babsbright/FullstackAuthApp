@@ -77,7 +77,7 @@ export default function LoginForm() {
                                 value={data.email}
                                 onChange={handleChange}
                                 required
-                                className="px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                className="px-2 block w-full rounded-md border-0 focus:outline-none py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                             />
                         </div>
                     </div>
@@ -94,7 +94,7 @@ export default function LoginForm() {
                 </div> */}
                         </div>
                         <div className="mt-2">
-                            <div className="flex justify-between items-center px-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                            <div className="flex justify-between items-center px-2 block w-full rounded-md border-0 py-1.5 focus:outline-none text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                 <input
                                     name="password"
                                     value={data.password}
@@ -103,7 +103,7 @@ export default function LoginForm() {
                                     minLength={6}
                                     maxLength={15}
                                     required
-                                    className="block w-full rounded-md  py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md text-gray-900 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
                                 />
 
                                 <span

@@ -32,8 +32,8 @@ export default function Register() {
 
             <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
                 <div className="max-w-screen-xl m-0 shadow-lg sm:rounded-lg flex justify-center flex-1">
-                    <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
-                        <div className="flex flex-col items-center">
+                <div className="flex flex-col max-sm:mt-10 sm:justify-center lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
+                <div className="flex flex-col items-center">
                             <div className="w-full flex-1">
 
                             <div className="sm:mx-auto sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
