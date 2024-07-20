@@ -108,7 +108,7 @@ export default function RegisterForm() {
                                     minLength={6}
                                     maxLength={10}
                                     required
-                                    className="block w-full rounded-md  py-1.5 text-gray-900 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
+                                    className="block w-full rounded-md text-gray-900 shadow-sm placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6"
                                 />
 
                                 <span
