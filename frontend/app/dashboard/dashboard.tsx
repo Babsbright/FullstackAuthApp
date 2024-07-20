@@ -1,5 +1,5 @@
 'use client'
-import WithAuth from "../proctectedRoute";
+import WithAuth from "../ProctectedRoute";
 import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ECommerce from "../components/E-commerce";
 
