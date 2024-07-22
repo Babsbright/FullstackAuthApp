@@ -10,9 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use(morgan('dev')) // for logging
 // ROUTES
-app.use('/api/v1', require('./routes/posts'))
 app.use('/api/v1', require('./routes/auth'))
-app.use('/api/v1', require('./routes/features'))
 
 
 // Allow specific origin(s)
